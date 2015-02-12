@@ -5,7 +5,7 @@ import time
 from BeautifulSoup import BeautifulSoup
 
 scraperwiki.sqlite.save(unique_keys, data, table_name="swdata", verbose=2)
-CREATE TABLE 'swdata' ('trend' text, 'now' real, 'cityName' text, 'cityTableAveragePrice' text)
+CREATE TABLE swdata ('trend' text, 'now' real, 'cityName' text, 'cityTableAveragePrice' text)
 #CREATE TABLE 'swdata' ('trend' text, 'now' real, 'cityName' text, 'cityTableAveragePrice' text)
         scraperwiki.sqlite.save(unique_keys=['country'], data=data)
 def removeNL(x):
